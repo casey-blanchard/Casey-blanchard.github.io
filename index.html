@@ -1,18 +1,83 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>The very first space/</title>
+        <title>The very first space</title>
+        <style>
+            body {
+                background: rgb(41, 172, 196);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+              max-width: 800px;
+                margin: auto;
+            }
+         
+            /* navigation menu */
+            nav {
+                background: rgb(141, 128, 125);
+                margin: 0 auto;
+                margin-botton: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+         
+            /* main container area beneath menu */
+            main {
+                background: rgb(238, 229, 206);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+                border-radius: 20px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px silver ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+         </style>
     </head>
     
     <body>
-        <div><!--this is the page split--> 
+        <div id="all-contents"><!--this is the page split--> 
+
             <nav>
                 <h1>General aspects website</h1>
-                <ul>
-                    <li>
+                <ul id="nav-ul">
+                    <li class="nav-li">
                         <a href = "index.html"> Home </a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a href= "Portfolio.html"> Portfolio </a>
                     </li>
                 </ul>
@@ -20,19 +85,21 @@
             
             <main>
             
-            <div><!--this is where colums are.-->
+            <div class="content"><!--this is where colums are.-->
                 <h2>Casey Blanchard</h2>
                 <p>I am a student at Hahnville highschool. I am in 11th grade.</p>
                  <!--interest-->
-                <div>
+                <div class="sidebar">
                      <!--sidebar secton-->
-                    <img src= "https://th.bing.com/th/id/OIP.Ze5_jCRZOp9UU0S7X8-4vgHaDt?w=336&h=175&c=7&r=0&o=5&pid=1.7">
+                    <img class="sidebar-image" src= "https://th.bing.com/th/id/OIP.Ze5_jCRZOp9UU0S7X8-4vgHaDt?w=336&h=175&c=7&r=0&o=5&pid=1.7">
+                    <div id="Interest">
                     <h3>Interest</h3>
                         <u1>
                             <li>Fitness</li>
                             <li>Reading</li>
                             <li>Finance</li>
                         </u1>
+                    </div>
                 </div>
             </div>
             </main>
